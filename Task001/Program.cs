@@ -4,21 +4,14 @@
 // нарушают порядок возрастания
 int index=0;
 int [] array=new int[10];
+Console.WriteLine("Массив А");
 while (index<10)
 {
      array[index]=new Random().Next(10,100);
+     Console.WriteLine(array[index]);
      index++;
 }
  
-
- index =0;
- Console.WriteLine("Массив А");
- while (index<10)
- {
-     int arrayA=array[index];
-     Console.WriteLine(arrayA);
-     index++; 
- }
 
 Console.WriteLine();
 Console.WriteLine("Массив B");
