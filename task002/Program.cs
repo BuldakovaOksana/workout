@@ -4,19 +4,12 @@
 
 int index=0;
 int [] array=new int [10];
-
-while (index<array.Length)
-{
-  array[index]=new Random().Next(10,100);
-  index++;   
-}
-index=0;
 Console.WriteLine("Массив А");
 while (index<array.Length)
 {
-     int arrayA=array[index];
-     Console.WriteLine(arrayA);
-     index++;
+  array[index]=new Random().Next(10,100);
+  Console.WriteLine(array[index]);
+  index++;   
 }
 
 Console.WriteLine();
